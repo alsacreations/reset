@@ -1,6 +1,6 @@
 # Reset CSS Alsacréations
 
-Reset CSS moderne qui uniformise l'affichage des éléments HTML entre les navigateurs tout en appliquant des bonnes pratiques d'accessibilité et en optimisant l'expérience utilisateur.
+Le fichier CSS [`reset.css`](public/reset.css) est une base de travail moderne qui uniformise l'affichage des éléments HTML entre les navigateurs tout en appliquant des bonnes pratiques d'accessibilité et en optimisant l'expérience utilisateur.
 
 ## Principales sections couvertes
 
