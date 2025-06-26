@@ -4,7 +4,7 @@ Reset CSS moderne qui uniformise l'affichage des éléments HTML entre les navig
 
 ## Principales sections couvertes
 
-- **Configuration globale** : Color-scheme automatique et modèle de boîte uniforme
+- **Configuration globale** : Color-scheme et modèle de boîte
 - **Éléments de base** : Styles fondamentaux pour HTML et body
 - **Navigation et focus** : Gestion accessible du focus et des interactions clavier
 - **Typographie** : Optimisations pour les titres, paragraphes et guillemets français
@@ -13,7 +13,7 @@ Reset CSS moderne qui uniformise l'affichage des éléments HTML entre les navig
 - **Formulaires** : Normalisation complète des champs et boutons
 - **Éléments préformatés** : Configuration optimale pour le code
 - **SVG** : Gestion moderne des graphiques vectoriels
-- **Accessibilité ARIA** : Support complet des attributs et états ARIA
+- **Accessibilité ARIA** : Support des attributs et états ARIA
 - **Masquage accessible** : Classe `.visually-hidden` pour les lecteurs d'écran
 - **Préférences utilisateur** : Respect du `prefers-reduced-motion`
 - **Reset print** : Styles optimisés pour l'impression
