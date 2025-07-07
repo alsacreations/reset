@@ -33,14 +33,14 @@ Le fichier `app.css` charge toutes les feuilles de styles dans l'ordre des layer
 - `theme-tokens.css` - Variables sous forme de tokens
 - `layouts.css` - Utilitaires de disposition des composants
 
-1. **Layer `base`** :
+2. **Layer `base`** :
 
 - `styles.css` - Styles globaux du projet (gabarits, typographie, etc.)
 
-1. **Layer `components`** :
+3. **Layer `components`** :
 
 - tous les fichiers CSS des composants (bouton, input, etc.)
 
-1. **Layer `utilities`** :
+4. **Layer `utilities`** :
 
 - Fichier de classes utilitaires si nécessaire (accessibilité, alignement, etc.)
