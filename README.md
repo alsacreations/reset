@@ -28,19 +28,19 @@ Le fichier `app.css` charge toutes les feuilles de styles dans l'ordre des layer
 
 1. **Layer `config` (reset, polices, themes, layouts)** :
 
-- `reset.css` - Reset CSS moderne (et reset print)
-- `theme.css` - Thème principal (valeurs primitives)
-- `theme-tokens.css` - Variables sous forme de tokens
-- `layouts.css` - Utilitaires de disposition des composants
+   - `reset.css` - Reset CSS moderne (et reset print)
+   - `theme.css` - Thème principal (valeurs primitives)
+   - `theme-tokens.css` - Variables sous forme de tokens
+   - `layouts.css` - Utilitaires de disposition des composants
 
 2. **Layer `base`** :
 
-- `styles.css` - Styles globaux du projet (gabarits, typographie, etc.)
+   - `styles.css` - Styles globaux du projet (gabarits, typographie, etc.)
 
 3. **Layer `components`** :
 
-- tous les fichiers CSS des composants (bouton, input, etc.)
+   - tous les fichiers CSS des composants (bouton, input, etc.)
 
 4. **Layer `utilities`** :
 
-- Fichier de classes utilitaires si nécessaire (accessibilité, alignement, etc.)
+   - Fichier de classes utilitaires si nécessaire (accessibilité, alignement, etc.)
