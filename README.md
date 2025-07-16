@@ -20,7 +20,7 @@ Le fichier CSS [`reset.css`](public/reset.css) est une base de travail moderne q
 
 ## Utilisation
 
-Placez ce reset dans [un layer CSS](https://www.alsacreations.com/article/lire/1871-Maitriser-la-specificite-CSS-grace-a-Cascade-Layers.html) `reset` sous vos autres layers pour une meilleure organisation du code et gestion de la spécificité CSS.
+Placez ce reset dans [un layer CSS](https://www.alsacreations.com/article/lire/1871-Maitriser-la-specificite-CSS-grace-a-Cascade-Layers.html) `config` sous vos autres layers pour une meilleure organisation du code et gestion de la spécificité CSS.
 
 ## Méthodologie globale
 
