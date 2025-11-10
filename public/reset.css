@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-11-05
+ * Mise à jour : 2025-11-10
  * ========================================== */
 
 /* ==========================================
@@ -40,19 +40,12 @@ body {
  * Navigation et focus
  * ========================================== */
 
-/* Masquage de l'outline pour les interactions à la souris/touch */
-/* Attention : uniquement si la règle suivante (:focus-visible) est active */
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* Outline uniquement pour la navigation au clavier */
+/* Focus clavier */
 :focus-visible {
   outline: 2px solid light-dark(#4285f4, #8ab4f8);
   outline-offset: 2px;
 }
 
-/* Moderne: utilisation de la couleur d'accent système */
 @supports (outline-color: AccentColor) {
   :focus-visible {
     outline-color: AccentColor;
