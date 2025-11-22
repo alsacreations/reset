@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-11-10
+ * Mise à jour : 2025-11-22
  * ========================================== */
 
 /* ==========================================
@@ -23,6 +23,7 @@
 html {
   interpolate-size: allow-keywords;
   overflow-wrap: break-word;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   hanging-punctuation: first allow-end last;
@@ -112,6 +113,7 @@ ol {
   list-style-position: outside;
 
   /* Suppression des styles des listes avec classe (version accessible) */
+
   /* Attention : nécessite attribut role dans le HTML */
   &[role="list"] {
     padding-inline-start: 0;
@@ -214,6 +216,7 @@ button {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
+
 textarea {
   overflow: auto;
   vertical-align: top;
