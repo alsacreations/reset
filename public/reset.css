@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-11-22
+ * Mise à jour : 2025-11-25
  * ========================================== */
 
 /* ==========================================
@@ -41,16 +41,16 @@ body {
  * Navigation et focus
  * ========================================== */
 
+:focus {
+  outline: none;
+}
 /* Focus clavier */
 :focus-visible {
-  outline: 2px solid light-dark(#4285f4, #8ab4f8);
+  outline: 2px solid;
   outline-offset: 2px;
-}
-
-@supports (outline-color: AccentColor) {
-  :focus-visible {
-    outline-color: AccentColor;
-  }
+  outline-color: light-dark(#4285f4, #8ab4f8); /* Default color */
+  outline-color: -webkit-focus-ring-color; /* WebKit/Chromium */
+  outline-color: -moz-focusring; /* Firefox */
 }
 
 /* Marge au-dessus des ancres ciblées */
