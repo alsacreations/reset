@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-11-25
+ * Mise à jour : 2025-12-03
  * ========================================== */
 
 /* ==========================================
@@ -44,13 +44,14 @@ body {
 :focus {
   outline: none;
 }
+
 /* Focus clavier */
 :focus-visible {
   outline: 2px solid;
-  outline-offset: 2px;
   outline-color: light-dark(#4285f4, #8ab4f8); /* Default color */
   outline-color: -webkit-focus-ring-color; /* WebKit/Chromium */
   outline-color: -moz-focusring; /* Firefox */
+  outline-offset: 2px;
 }
 
 /* Marge au-dessus des ancres ciblées */
@@ -289,16 +290,6 @@ svg:has(symbol) {
   cursor: not-allowed;
 }
 
-/* Gestion des éléments cachés mais accessibles */
-[aria-hidden="false"][hidden] {
-  display: revert;
-}
-
-[aria-hidden="false"][hidden]:not(:focus) {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-}
-
 /* ==========================================
  * Masquage visuel accessible
  * ========================================== */
@@ -430,13 +421,12 @@ svg:has(symbol) {
   }
 
   /* Pas de saut de page au sein de ces éléments */
-  blockquote,
   ul,
+  blockquote,
   ol,
   figure,
   table {
     break-inside: avoid;
-    page-break-inside: avoid;
   }
 
   /* Pas de saut de page après ces éléments */
@@ -446,7 +436,6 @@ svg:has(symbol) {
   h4,
   caption {
     break-after: avoid;
-    page-break-after: avoid;
   }
 
   /* Styles des liens */
