@@ -404,32 +404,32 @@ svg:has(symbol) {
   /* Titrages (24pt = 32px) */
   h1 {
     margin-block: 0 24pt;
+    color: #000000 !important;
     font-size: 18pt;
     font-weight: 700;
     line-height: 1.1;
-    color: #000000 !important;
   }
 
   h2 {
     margin-block: 0 18pt;
+    color: #000000 !important;
     font-size: 16pt;
     font-weight: 700;
     line-height: 1.1;
-    color: #000000 !important;
   }
 
   h3 {
     margin-block: 0 15pt;
+    color: #000000 !important;
     font-size: 14pt;
     font-weight: 700;
-    color: #000000 !important;
   }
 
   h4 {
     margin-block: 0 12pt;
+    color: #000000 !important;
     font-size: 12pt;
     font-weight: 700;
-    color: #000000 !important;
   }
 
   /* Classes dédiées print / no-print */
@@ -477,6 +477,7 @@ svg:has(symbol) {
   }
 
   /* On affiche l'URL des liens externes */
+
   /* a[href^="http"]::after,
   a[href^="https"]::after {
     content: " (" attr(href) ")";
