@@ -361,32 +361,6 @@ svg:has(symbol) {
     line-height: 1.5;
   }
 
-  /* On redéfinit les Layouts Bretzel */
-  [data-layout*="cluster"],
-  [data-layout*="repel"],
-  [data-layout*="reel"] {
-    flex-direction: column !important;
-  }
-
-  [data-layout*="autogrid"],
-  [data-layout*="duo"],
-  [data-layout*="liquid"] {
-    grid-template-columns: auto !important;
-  }
-
-  [data-layout*="switcher"] {
-    flex-direction: column !important;
-
-    & > * {
-      flex-basis: auto !important;
-      flex-grow: 0 !important;
-    }
-  }
-
-  [data-layout*="boxed"] {
-    max-width: none !important;
-  }
-
   /* Espacements typographiques (15pt = 20px) */
   p,
   blockquote,
