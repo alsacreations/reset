@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-12-03
+ * Mise à jour : 2025-12-08
  * ========================================== */
 
 /* ==========================================
@@ -337,9 +337,7 @@ svg:has(symbol) {
 
   /* Reset général */
   * {
-    display: revert;
     box-sizing: border-box;
-    all: unset;
   }
 
   img {
@@ -358,10 +356,35 @@ svg:has(symbol) {
     margin: 0;
     background-color: #ffffff !important;
     color: #000000 !important;
-    font-family: serif;
     font-family: Georgia, serif;
     font-size: 12pt;
     line-height: 1.5;
+  }
+
+  /* On redéfinit les Layouts Bretzel */
+  [data-layout*="cluster"],
+  [data-layout*="repel"],
+  [data-layout*="reel"] {
+    flex-direction: column !important;
+  }
+
+  [data-layout*="autogrid"],
+  [data-layout*="duo"],
+  [data-layout*="liquid"] {
+    grid-template-columns: auto !important;
+  }
+
+  [data-layout*="switcher"] {
+    flex-direction: column !important;
+
+    & > * {
+      flex-basis: auto !important;
+      flex-grow: 0 !important;
+    }
+  }
+
+  [data-layout*="boxed"] {
+    max-width: none !important;
   }
 
   /* Espacements typographiques (15pt = 20px) */
@@ -371,6 +394,7 @@ svg:has(symbol) {
   ul,
   ol {
     margin-block: 0 15pt;
+    color: #000000 !important;
   }
 
   p:last-child {
@@ -383,6 +407,7 @@ svg:has(symbol) {
     font-size: 18pt;
     font-weight: 700;
     line-height: 1.1;
+    color: #000000 !important;
   }
 
   h2 {
@@ -390,18 +415,21 @@ svg:has(symbol) {
     font-size: 16pt;
     font-weight: 700;
     line-height: 1.1;
+    color: #000000 !important;
   }
 
   h3 {
     margin-block: 0 15pt;
     font-size: 14pt;
     font-weight: 700;
+    color: #000000 !important;
   }
 
   h4 {
     margin-block: 0 12pt;
     font-size: 12pt;
     font-weight: 700;
+    color: #000000 !important;
   }
 
   /* Classes dédiées print / no-print */
@@ -443,16 +471,16 @@ svg:has(symbol) {
   a:link,
   a:visited {
     background: transparent !important;
-    color: unset;
+    color: #000000 !important;
     font-weight: 700;
     text-decoration: underline !important;
   }
 
   /* On affiche l'URL des liens externes */
-  a[href^="http"]::after,
+  /* a[href^="http"]::after,
   a[href^="https"]::after {
     content: " (" attr(href) ")";
-  }
+  } */
 
   /* On masque les vidéos */
   video,
