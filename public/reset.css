@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2025-12-24
+ * Mise à jour : 2026-02-04
  * ========================================== */
 
 /* ----------------------------
@@ -40,7 +40,7 @@ body {
 }
 
 /* ----------------------------
- * Navigation et focus
+ * États des éléments
  * ---------------------------- */
 
 :focus {
@@ -50,11 +50,17 @@ body {
 /* Focus clavier */
 :focus-visible {
   outline: 2px solid;
-  outline-color: light-dark(#4285f4, #8ab4f8); /* Default color */
-  outline-color: -webkit-focus-ring-color; /* WebKit/Chromium */
-  outline-color: -moz-focusring; /* Firefox */
   outline-offset: 2px;
 }
+
+:disabled {
+  opacity: 70%;
+  cursor: not-allowed;
+}
+
+/* ----------------------------
+ * Liens et ancres
+ * ---------------------------- */
 
 /* Marge au-dessus des ancres ciblées */
 :target {
@@ -116,7 +122,6 @@ ol {
   list-style-position: outside;
 
   /* Suppression des styles des listes avec classe (version accessible) */
-
   /* Attention : nécessite attribut role dans le HTML */
   &[role="list"] {
     padding-inline-start: 0;
