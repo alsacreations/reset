@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2026-03-04
+ * Mise à jour : 2026-03-17
  * ========================================== */
 
 /* ----------------------------
@@ -68,9 +68,10 @@ body {
   scroll-margin-block: 1rem;
 }
 
-/* Liens sans classe */
-a:not([class]) {
+/* Liens */
+a {
   text-decoration-skip-ink: auto;
+  text-underline-offset: 2px;
 }
 
 /* ----------------------------
