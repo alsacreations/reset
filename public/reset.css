@@ -53,8 +53,7 @@ body {
   outline-offset: 2px;
 }
 
-:disabled,
-:has(> :disabled) {
+:disabled {
   opacity: 70%;
   cursor: not-allowed;
 }
