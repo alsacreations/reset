@@ -1,7 +1,7 @@
 /* ==========================================
  * Reset CSS et print, made par Alsacréations
  * Consignes : à placer dans un layer inférieur aux autres layers
- * Mise à jour : 2026-03-17
+ * Mise à jour : 2026-04-03
  * ========================================== */
 
 /* ----------------------------
@@ -28,10 +28,11 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   hanging-punctuation: first allow-end last;
+  scrollbar-gutter: stable;
 }
 
 body {
-  min-height: 100dvh;
+  min-height: 100svh;
   margin: 0;
   overflow-x: clip;
   font-family: system-ui, sans-serif;
@@ -53,7 +54,8 @@ body {
   outline-offset: 2px;
 }
 
-:disabled {
+:disabled
+/*, :has(> :disabled)*/ {
   opacity: 70%;
   cursor: not-allowed;
 }
@@ -67,10 +69,9 @@ body {
   scroll-margin-block: 1rem;
 }
 
-/* Liens */
-a {
+/* Liens sans classe */
+a:not([class]) {
   text-decoration-skip-ink: auto;
-  text-underline-offset: 2px;
 }
 
 /* ----------------------------
@@ -118,12 +119,13 @@ q {
 
 ul,
 ol {
-    padding-inline-start: 1em;
-    list-style-position: outside;
+  padding-inline-start: 1em;
+  list-style-position: outside;
 
-    /* Suppression des styles des listes (version accessible) */
-    /* Attention : nécessite attribut role dans le HTML */
-    &[role="list"] {
+  /* Suppression des styles des listes (version accessible) */
+
+  /* Attention : nécessite attribut role dans le HTML */
+  &[role="list"] {
     margin: 0;
     padding-inline-start: 0;
     list-style: none;
