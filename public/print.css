@@ -45,6 +45,7 @@
   ol {
     margin-block: 0 15pt;
     color: #000000 !important;
+    font-size: 12pt;
   }
 
   p:last-child {
