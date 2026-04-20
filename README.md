@@ -1,6 +1,6 @@
 # 🧽 Reset CSS Alsacréations
 
-Le fichier CSS [`reset.css`](public/reset.css) est une base de travail moderne qui uniformise l'affichage des éléments HTML entre les navigateurs tout en appliquant des bonnes pratiques d'accessibilité et en optimisant l'expérience utilisateur.
+Le fichier CSS [`reset.css`](public/reset.css) (ainsi que [`print.css`](public/print.css)) sont des bases de travail modernes qui uniformisent l'affichage des éléments HTML entre les navigateurs tout en appliquant des bonnes pratiques d'accessibilité et en optimisant l'expérience utilisateur.
 
 ## Principales sections couvertes
 
@@ -27,20 +27,17 @@ Placez ce reset dans [un layer CSS](https://www.alsacreations.com/article/lire/1
 Ce fichier Reset entre dans un workflow global qui se résume à un fichier `app.css` qui charge toutes les feuilles de styles dans l'ordre des layers CSS :
 
 1. **Layer `config` (reset, polices, themes, layouts)** :
-
    - `reset.css` - Reset CSS moderne (et reset print)
    - `theme.css` - Thème principal (valeurs primitives)
    - `theme-tokens.css` - Variables sous forme de tokens
    - `layouts.css` - Utilitaires de disposition des composants
 
 2. **Layer `base`** :
-
    - `styles.css` - Styles globaux du projet (gabarits, typographie, etc.)
 
 3. **Layer `components`** :
-
    - tous les fichiers CSS des composants (bouton, input, etc.)
 
 4. **Layer `utilities`** :
-
-   - Fichier de classes utilitaires si nécessaire (accessibilité, alignement, etc.)
+   - `print.css` - Reset print
+   - Autres fichiers de classes utilitaires si nécessaire (accessibilité, alignement, etc.)
